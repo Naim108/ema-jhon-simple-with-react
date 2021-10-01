@@ -1,9 +1,13 @@
 import React from 'react';
+import useProducts from '../../hooks/useProducts';
 
 const OrderReview = () => {
+    const [products]=useProducts();
     return (
         <div>
-            <h2>This is inventory management</h2>
+           {
+               products.map(product=>console.log(product.name))
+           }
         </div>
     );
 };
