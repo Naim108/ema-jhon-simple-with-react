@@ -5,6 +5,7 @@ import Shop from './components/Shop/Shop';
 import OrderReview from './components/OrderReview/OrderReview'
 import Not from './components/NotFound/Not'
 import Inventory from './components/Inventory/Inventory'
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
        </Route>
        <Route path="/orders">
          <OrderReview></OrderReview>
+       </Route>
+       <Route path='/placeorder'>
+         <PlaceOrder></PlaceOrder>
        </Route>
        <Route path="*">
          <Not></Not>
